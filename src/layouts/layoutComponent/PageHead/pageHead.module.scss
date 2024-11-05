@@ -1,0 +1,27 @@
+.wrapper {
+    width: 100%;
+    height: var(--layout-page-head-height);
+    display: flex;
+    justify-content: center;
+    margin-top: var(--layout-header-height);
+}
+
+.content_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: var(--layout-content-width-percent);
+    max-width: var(--layout-content-max-width);
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    color: #1f272e;
+    font-weight: 700;
+}
+
+.btn_add {
+    color: red;
+}

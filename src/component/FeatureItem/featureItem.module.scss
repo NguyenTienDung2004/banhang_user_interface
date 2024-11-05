@@ -1,0 +1,16 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    width: 100%;
+    height: 38px;
+    border-radius: 8px;
+    transition: background-color linear 0.2s;
+    .name {
+        font-size: 1.3rem;
+        font-weight: normal;
+    }
+    &:hover{
+        background-color: #f4f5f6;
+    }
+}

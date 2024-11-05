@@ -1,0 +1,91 @@
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f5f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 400px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 8px rgba(25, 39, 52, 0.06), 0px 0px 4px rgba(25, 39, 52, 0.12);
+    border-radius: 8px;
+    padding: 45px 0;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 40px;
+    img {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 10px;
+    }
+    .header_title {
+        font-size: 1.8rem;
+        color: var(--text-color);
+        font-weight: 500;
+        line-height: 1.2;
+    }
+}
+
+.input_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .input_item{
+        width: 320px;
+        height: 35px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        border-radius: 6px;
+        input{
+            padding: 6px 35px;
+            width: 100%;
+            height: 100%;
+            font-size: 1.4rem;
+            color: var(--text-color);
+            background-color: #f4f5f6;
+        }
+        .icon{
+            position: absolute;
+            left: 10px;
+            color: #797979d8;
+        }
+        span{
+            position: absolute;
+            right: 6px;
+            font-size: 12px;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            user-select: none;
+            cursor: pointer;
+            color: #74808b!important;
+        }
+    }
+}
+
+.btn_dang_nhap{
+    width: 320px;
+    font-size: 14px;
+    color: var(--white);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0.5px 0px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;
+    background-color: #2490ef;
+    padding: 6px;
+    cursor: pointer;
+    &:active{
+        background-color: #0f76d1;
+        box-shadow: 0 0 6px #2490ef;
+    }
+}

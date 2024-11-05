@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Home from '~/pages/Home/Home';
+import LogIn from '~/pages/LogIn/LogIn';
+import { Route, Routes, Navigate } from 'react-router-dom';
+import { useState } from 'react';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [isAuthenticate, setIsAuthenticate] = useState(false);
+    return (
+        <div>
+            <Routes>
+                <Route path="/login" element={<LogIn setIsAuthenticate={setIsAuthenticate} />} />
+                <Route path="*" element={isAuthenticate ? <Home /> : <Navigate to="/login" />} />
+            </Routes>
+        </div>
+    );
 }
 
 export default App;

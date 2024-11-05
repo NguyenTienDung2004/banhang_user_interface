@@ -1,0 +1,23 @@
+.search{
+    width: 300px;
+    height: 36px;
+    background-color: #f4f5f6;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    .icon_search{
+        margin: 0 8px;
+        cursor: pointer;
+    }
+    input{
+        flex: 1;
+        height: 100%;
+        font-size: 1.3rem;
+        background-color: transparent;
+        color: #1f272e;
+    }
+}
+
+.search_result{
+    width: 300px;
+}
