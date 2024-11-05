@@ -1,17 +1,18 @@
-.wrapper{
+.wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main_container{
+.main_container {
     width: var(--layout-content-width-percent);
     max-width: var(--layout-content-max-width);
     display: flex;
+    overflow-y: overlay;
 }
 
-.content_container{
+.content_container {
     flex: 1;
     padding: 0 15px;
     margin-left: 15px;

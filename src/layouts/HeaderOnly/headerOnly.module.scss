@@ -1,13 +1,14 @@
-.wrapper{
+.wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: var(--layout-header-height);;
+    margin-top: var(--layout-header-height);
 }
 
-.main_container{
+.main_container {
     width: var(--layout-content-width-percent);
     max-width: var(--layout-content-max-width);
     margin-bottom: 50px;
+    overflow-y: overlay;
 }
