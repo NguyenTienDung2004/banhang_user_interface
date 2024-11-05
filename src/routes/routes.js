@@ -20,7 +20,6 @@ import CustomerListDetail from '~/pages/CustomerList/CustomerListDetail';
 import OpportunityDetail from '~/pages/Opportunity/OpportunityDetail';
 import ContractDetail from '~/pages/Contract/ContractDetail';
 
-
 import { MainLayout, HeaderOnly } from '~/layouts';
 
 const publicRoutes = [
@@ -89,46 +88,55 @@ const publicRoutes = [
         path: routesConfig.PotentialCustomerDetail,
         component: PotentialCustomerDetail,
         layout: HeaderOnly,
+        titlePage: 'Khách hàng tiềm năng',
     },
     {
         path: routesConfig.AppointmentDetail,
         component: AppointmentDetail,
         layout: HeaderOnly,
+        titlePage: 'Cuộc hẹn',
     },
     {
         path: routesConfig.SrcPotentialCustomerDetail,
         component: SrcPotentialCustomerDetail,
         layout: HeaderOnly,
+        titlePage: 'Nguồn khách hàng tiềm năng',
     },
     {
         path: routesConfig.ConversationDetail,
         component: ConversationDetail,
         layout: HeaderOnly,
+        titlePage: 'Hội thoại',
     },
     {
         path: routesConfig.SubscribeReceiveNewsletterDetail,
         component: SubscribeReceiveNewsletterDetail,
         layout: HeaderOnly,
+        titlePage: 'Đăng ký nhận bản tin',
     },
     {
         path: routesConfig.ContactDetail,
         component: ContactDetail,
         layout: HeaderOnly,
+        titlePage: 'Liên lạc',
     },
     {
         path: routesConfig.CustomerListDetail,
         component: CustomerListDetail,
         layout: HeaderOnly,
+        titlePage: 'Danh sách khách hàng',
     },
     {
         path: routesConfig.OpportunityDetail,
         component: OpportunityDetail,
         layout: HeaderOnly,
+        titlePage: 'Cơ hội',
     },
     {
         path: routesConfig.ContractDetail,
         component: ContractDetail,
         layout: HeaderOnly,
+        titlePage: 'Hợp đồng',
     },
     {
         path: routesConfig.NotRelease,
